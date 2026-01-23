@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#0055FF">
+  <!-- Brain petal icon - stylized petals arranged in circular pattern -->
+  <!-- Center circle -->
+  <circle cx="50" cy="50" r="8"/>
+  <!-- Top petal -->
+  <ellipse cx="50" cy="30" rx="7" ry="14" transform="rotate(0, 50, 50)"/>
+  <!-- Top-right petal -->
+  <ellipse cx="50" cy="30" rx="7" ry="14" transform="rotate(51.4, 50, 50)"/>
+  <!-- Right petal -->
+  <ellipse cx="50" cy="30" rx="7" ry="14" transform="rotate(102.8, 50, 50)"/>
+  <!-- Bottom-right petal -->
+  <ellipse cx="50" cy="30" rx="7" ry="14" transform="rotate(154.2, 50, 50)"/>
+  <!-- Bottom-left petal -->
+  <ellipse cx="50" cy="30" rx="7" ry="14" transform="rotate(205.6, 50, 50)"/>
+  <!-- Left petal -->
+  <ellipse cx="50" cy="30" rx="7" ry="14" transform="rotate(257, 50, 50)"/>
+  <!-- Top-left petal -->
+  <ellipse cx="50" cy="30" rx="7" ry="14" transform="rotate(308.4, 50, 50)"/>
+</svg>

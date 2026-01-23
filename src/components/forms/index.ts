@@ -1,0 +1,1 @@
+export { HubSpotEmbed } from './HubSpotEmbed'
