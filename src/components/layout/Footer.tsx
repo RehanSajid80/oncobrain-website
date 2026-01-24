@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { Linkedin, Twitter, Mail } from 'lucide-react'
 import { siteConfig } from '@/content/site'
 import { HubSpotEmbed } from '@/components/forms/HubSpotEmbed'
@@ -15,8 +14,8 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-flex items-center">
-              <Image
-                src="/logos/oncobrain-logo.png"
+              <img
+                src="/oncobrain-website/logos/oncobrain-logo.png"
                 alt="OncoBrain"
                 width={160}
                 height={36}

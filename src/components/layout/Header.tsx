@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { siteConfig } from '@/content/site'
@@ -18,13 +17,12 @@ export function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image
-              src="/logos/oncobrain-logo.png"
+            <img
+              src="/oncobrain-website/logos/oncobrain-logo.png"
               alt="OncoBrain"
               width={180}
               height={40}
               className="h-8 md:h-10 w-auto"
-              priority
             />
           </Link>
 
