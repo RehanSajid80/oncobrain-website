@@ -22,6 +22,10 @@ export const homepage = {
       '32 million Americans live in counties without access to an oncologist',
     ],
     whyItMatters: 'Non-concordant care is directly associated with poorer five-year survival outcomes.',
+    quote: {
+      text: 'General AI tools answer the question you ask. Oncology requires surfacing the questions you didn\'t know to ask.',
+      author: 'OncoBrain Clinical Team',
+    },
   },
 
   // The Gap Section
@@ -171,6 +175,31 @@ export const homepage = {
     headline: 'Designed for trust. Validated by clinicians.',
     description: 'In early pilot evaluations, clinicians rated OncoBrain highly across the dimensions that matter most.',
     ctaText: 'See How It Works',
+  },
+
+  // Testimonials Section
+  testimonials: {
+    headline: 'Trusted by Oncologists',
+    items: [
+      {
+        quote: 'OncoBrain helps me stay current with rapidly evolving treatment landscapes. It\'s like having a tumor board on call 24/7.',
+        author: 'Community Oncologist',
+        role: 'Medical Oncologist',
+        organization: 'Community Cancer Center',
+      },
+      {
+        quote: 'The transparency is what convinced me. I can see exactly why OncoBrain made each recommendation and verify it myself.',
+        author: 'Health System Physician',
+        role: 'Hematology-Oncology',
+        organization: 'Regional Medical Center',
+      },
+      {
+        quote: 'For complex cases with multiple comorbidities, OncoBrain surfaces considerations I might have missed under time pressure.',
+        author: 'Breast Oncology Specialist',
+        role: 'Breast Oncology',
+        organization: 'University Health System',
+      },
+    ],
   },
 
   // CTA Section
