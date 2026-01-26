@@ -97,21 +97,22 @@ export const teamPage = {
   },
 
   // Partner & Advisor Affiliations (logos)
+  // Using Clearbit Logo API for company logos - free service
   affiliations: {
     headline: 'Our Team\'s Experience Includes',
     logos: [
-      { name: 'Loyola University Chicago', image: '/logos/affiliations/loyola.png' },
-      { name: 'World Health Organization', image: '/logos/affiliations/who.png' },
-      { name: 'UCLA', image: '/logos/affiliations/ucla.png' },
-      { name: 'Chewy', image: '/logos/affiliations/chewy.png' },
-      { name: 'Harvard Medical School', image: '/logos/affiliations/harvard.png' },
-      { name: 'Partners Healthcare', image: '/logos/affiliations/partners.png' },
-      { name: 'T-Mobile', image: '/logos/affiliations/tmobile.png' },
-      { name: 'KPMG', image: '/logos/affiliations/kpmg.png' },
-      { name: 'BCG', image: '/logos/affiliations/bcg.png' },
-      { name: 'Penn', image: '/logos/affiliations/penn.png' },
-      { name: 'MGH', image: '/logos/affiliations/mgh.png' },
-      { name: 'UCSF', image: '/logos/affiliations/ucsf.png' },
+      { name: 'Loyola University Chicago', logo: 'https://logo.clearbit.com/luc.edu' },
+      { name: 'World Health Organization', logo: 'https://logo.clearbit.com/who.int' },
+      { name: 'UCLA', logo: 'https://logo.clearbit.com/ucla.edu' },
+      { name: 'Chewy', logo: 'https://logo.clearbit.com/chewy.com' },
+      { name: 'Harvard Medical School', logo: 'https://logo.clearbit.com/hms.harvard.edu' },
+      { name: 'Partners Healthcare', logo: 'https://logo.clearbit.com/massgeneralbrigham.org' },
+      { name: 'T-Mobile', logo: 'https://logo.clearbit.com/t-mobile.com' },
+      { name: 'KPMG', logo: 'https://logo.clearbit.com/kpmg.com' },
+      { name: 'BCG', logo: 'https://logo.clearbit.com/bcg.com' },
+      { name: 'Penn', logo: 'https://logo.clearbit.com/upenn.edu' },
+      { name: 'MGH', logo: 'https://logo.clearbit.com/massgeneral.org' },
+      { name: 'UCSF', logo: 'https://logo.clearbit.com/ucsf.edu' },
     ],
   },
 }

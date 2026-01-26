@@ -79,7 +79,7 @@ function AffiliationLogo({
   logo,
   index
 }: {
-  logo: { name: string; image: string }
+  logo: { name: string; logo: string }
   index: number
 }) {
   return (
@@ -88,21 +88,19 @@ function AffiliationLogo({
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.05 }}
-      className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+      className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow h-24"
     >
-      {/* Placeholder - replace with actual logos */}
-      <div className="h-12 flex items-center justify-center">
-        <span className="text-sm font-medium text-gray-600 text-center">
-          {logo.name}
-        </span>
-      </div>
-      {/* Uncomment when logos are added:
       <img
-        src={`/oncobrain-website${logo.image}`}
+        src={logo.logo}
         alt={logo.name}
-        className="h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all"
+        className="h-12 w-auto max-w-full object-contain"
+        onError={(e) => {
+          // Fallback to text if logo fails to load
+          const target = e.target as HTMLImageElement
+          target.style.display = 'none'
+          target.parentElement!.innerHTML = `<span class="text-sm font-medium text-gray-600 text-center">${logo.name}</span>`
+        }}
       />
-      */}
     </motion.div>
   )
 }
