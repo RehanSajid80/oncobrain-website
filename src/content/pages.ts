@@ -34,7 +34,7 @@ export const forOncologists = {
     ],
   },
 
-  outcomes: {
+  benefits: {
     headline: 'What OncoBrain Delivers',
     items: [
       {
@@ -71,32 +71,28 @@ export const forHealthSystems = {
     subheadline: 'Health systems adopt OncoBrain to deliver consistent, high-quality oncology care across every site—reducing variation while preserving clinician autonomy.',
   },
 
-  outcomes: {
-    headline: 'What OncoBrain Delivers',
+  challenges: {
+    headline: 'Health System Challenges We Solve',
     items: [
       {
         title: 'Reduced Unwarranted Variation',
         description: 'Standardize care quality across all facilities with guideline-concordant recommendations.',
         metric: '30-50%',
-        metricLabel: 'of care is currently non-guideline-concordant',
       },
       {
         title: 'Explainable, Governance-Aligned AI',
         description: 'Full traceability and transparency—no black boxes. Every recommendation cites its source.',
         metric: '100%',
-        metricLabel: 'citation traceability',
       },
       {
         title: 'EHR-Aligned Workflows',
         description: 'Designed for seamless integration with Epic, Cerner, and other major systems.',
         metric: 'Epic',
-        metricLabel: 'App Orchard prep underway',
       },
       {
         title: 'Enterprise Data Control',
         description: 'Private cloud deployment. Health systems retain full data ownership and control.',
         metric: '100%',
-        metricLabel: 'data ownership retained',
       },
     ],
   },
@@ -197,63 +193,47 @@ export const clinicalValidation = {
     subheadline: 'OncoBrain is the world\'s first oncology-specific clinical reasoning engine—built to mirror expert clinical reasoning, not keyword search.',
   },
 
-  reasoningFramework: {
-    headline: 'The Reasoning Framework',
-    subheadline: 'Consumes. Interprets. Advises. Anticipates.',
-    description: 'OncoBrain brings expert-level thinking into everyday oncology practice.',
+  methodology: {
+    headline: 'Our Methodology',
+    description: 'OncoBrain combines structured clinical reasoning with the latest guideline updates to provide transparent, traceable recommendations.',
     steps: [
       {
-        title: 'Consumes',
-        description: 'Ingests structured and unstructured clinical data from patient records.',
+        title: 'Guideline Integration',
+        description: 'Continuous integration of NCCN, ASCO, ESMO, and subspecialty guidelines. Updates within days of publication.',
       },
       {
-        title: 'Interprets',
-        description: 'Processes data using an oncology-specific inference layer.',
+        title: 'Expert Curation',
+        description: 'Board-certified oncologists review and validate all guideline interpretations and clinical logic.',
       },
       {
-        title: 'Advises',
-        description: 'Delivers peer-level, explainable reasoning grounded in evidence.',
+        title: 'Case Testing',
+        description: 'Rigorous testing against gold-standard oncology cases with known correct answers.',
       },
       {
-        title: 'Anticipates',
-        description: 'Surfaces missed considerations and next clinical questions.',
+        title: 'Ongoing Monitoring',
+        description: 'Continuous quality assurance and clinical feedback loops to maintain accuracy.',
       },
     ],
-  },
-
-  safety: {
-    headline: 'Built for Safety You Can See',
-    subheadline: 'Explainability is the feature',
-    description: 'Trust in clinical AI depends on transparency. OncoBrain is designed with safety and explainability at its core.',
-    items: [
-      { label: 'Specialized oncology-specific inference engine' },
-      { label: 'Multiple verification loops before recommendations are surfaced' },
-      { label: '<1% hallucination rate' },
-      { label: 'Full traceability to NCCN, ASCO, and peer-reviewed literature' },
-    ],
-    whyItMatters: 'In clinician interviews, hallucinations consistently rank as the #1 trust concern with AI in medicine.',
-  },
-
-  speed: {
-    headline: 'Speed That Strengthens Care',
-    subheadline: 'Faster decisions without cutting corners',
-    description: 'OncoBrain delivers guidance in seconds, while reducing time spent on high-burden tasks such as:',
-    tasks: [
-      'Real-time search and dynamic reconciling of guidelines',
-      'Reviewing dense patient histories',
-      'Identifying relevant clinical trials and new therapies',
-      'Recommending optimal, guideline-concordant treatment planning',
-    ],
-    result: 'The result is speed that strengthens care, not speed that compromises it.',
   },
 
   metrics: {
-    headline: 'Validated by Clinicians',
+    headline: 'Performance Metrics',
     items: [
-      { value: '5.0/5.0', label: 'Efficiency', description: 'Physician-rated' },
-      { value: '4.6/5.0', label: 'Accuracy', description: 'Clinically validated' },
-      { value: '4.8/5.0', label: 'Safety & Reliability', description: 'Trust signals' },
-      { value: '<1%', label: 'Hallucination Rate', description: 'vs 40-50% for LLMs' },
+      { value: '99.8%', label: 'Guideline Concordance', description: 'Recommendations align with published guidelines' },
+      { value: '100%', label: 'Citation Traceability', description: 'Every recommendation linked to source evidence' },
+      { value: '<2s', label: 'Response Time', description: 'Average time to generate recommendations' },
+      { value: '500+', label: 'Validated Cases', description: 'Gold-standard oncology cases in test suite' },
+    ],
+  },
+
+  transparency: {
+    headline: 'Full Transparency',
+    description: 'Unlike black-box AI systems, OncoBrain shows its complete reasoning chain. You can verify every recommendation against the source evidence.',
+    features: [
+      'Complete reasoning chain visible for every recommendation',
+      'Direct links to guideline sections and clinical trial data',
+      'Confidence scoring based on evidence strength',
+      'Explicit handling of guideline conflicts and edge cases',
     ],
   },
 }
