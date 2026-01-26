@@ -405,5 +405,6 @@ export const contact = {
   info: {
     email: 'hello@oncobrain.ai',
     address: 'Tampa, Florida',
+    hours: 'Monday - Friday, 9am - 6pm EST',
   },
 }
