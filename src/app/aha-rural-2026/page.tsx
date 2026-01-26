@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import {
   CheckCircle,
   Unlock,
-  Infinity,
+  Repeat,
   Headphones,
   ArrowRight,
   MapPin,
@@ -16,7 +16,7 @@ import { HubSpotEmbed } from '@/components/forms'
 
 const iconMap: Record<string, React.ElementType> = {
   unlock: Unlock,
-  infinity: Infinity,
+  infinity: Repeat,
   checkCircle: CheckCircle,
   headset: Headphones,
 }
