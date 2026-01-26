@@ -11,6 +11,7 @@ export const siteConfig = {
     { name: 'For Health Systems', href: '/for-health-systems' },
     { name: 'Clinical Validation', href: '/clinical-validation' },
     { name: 'About', href: '/about' },
+    { name: 'Team', href: '/team' },
     { name: 'Contact', href: '/contact' },
   ],
 
@@ -23,6 +24,7 @@ export const siteConfig = {
     ],
     company: [
       { name: 'About Us', href: '/about' },
+      { name: 'Team', href: '/team' },
       { name: 'Contact', href: '/contact' },
       { name: 'Careers', href: '/careers' },
     ],
