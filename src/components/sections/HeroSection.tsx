@@ -9,6 +9,7 @@ interface HeroSectionProps {
   badge?: string
   headline: string
   subheadline: string
+  description?: string
   ctaText: string
   ctaSecondaryText?: string
 }
@@ -17,6 +18,7 @@ export function HeroSection({
   badge,
   headline,
   subheadline,
+  description,
   ctaText,
   ctaSecondaryText,
 }: HeroSectionProps) {
@@ -54,9 +56,15 @@ export function HeroSection({
               ))}
             </h1>
 
-            <p className="text-lg md:text-xl text-text-secondary mb-8 max-w-lg">
+            <p className="text-xl md:text-2xl text-[#0055FF] font-medium mb-4 max-w-lg">
               {subheadline}
             </p>
+
+            {description && (
+              <p className="text-base md:text-lg text-text-secondary mb-8 max-w-lg leading-relaxed">
+                {description}
+              </p>
+            )}
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="primary" size="lg" href="/contact">

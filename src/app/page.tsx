@@ -18,6 +18,7 @@ export default function HomePage() {
         badge={homepage.hero.badge}
         headline={homepage.hero.headline}
         subheadline={homepage.hero.subheadline}
+        description={homepage.hero.description}
         ctaText={homepage.hero.ctaText}
         ctaSecondaryText={homepage.hero.ctaSecondaryText}
       />
