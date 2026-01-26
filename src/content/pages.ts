@@ -278,6 +278,7 @@ export const about = {
   },
 
   story: {
+    headline: 'Our Story',
     paragraphs: [
       'OncoBrain was created to address a systemic problem in cancer care: the growing gap between rapidly evolving oncology evidence and real-world clinical decision-making.',
       'Medical knowledge now doubles every 73 days. Oncology guidelines update hundreds of times each year. Yet most cancer care is delivered outside academic medical centers, where clinicians are asked to make high-stakes, patient-specific decisions without consistent access to subspecialty expertise or the time required to synthesize complex evidence in real time.',
@@ -331,8 +332,30 @@ export const about = {
   },
 
   team: {
-    headline: 'Our Team',
-    description: 'OncoBrain is built by a multidisciplinary team with deep experience across oncology, clinical research, health systems, data science, and healthcare innovation. The team brings together oncology expertise, real-world clinical insight, and a shared commitment to safety, trust, and evidence-based care.',
+    headline: 'Leadership Team',
+    description: 'OncoBrain is built by a multidisciplinary team with deep experience across oncology, clinical research, health systems, data science, and healthcare innovation.',
+    members: [
+      {
+        name: 'Clinical Leadership',
+        role: 'Chief Medical Officer',
+        bio: 'Board-certified oncologist with expertise in clinical AI and cancer care delivery.',
+      },
+      {
+        name: 'Executive Leadership',
+        role: 'Chief Executive Officer',
+        bio: 'Healthcare technology leader with experience scaling clinical AI solutions.',
+      },
+      {
+        name: 'Technical Leadership',
+        role: 'Chief Technology Officer',
+        bio: 'AI/ML expert specializing in clinical reasoning and decision support systems.',
+      },
+    ],
+  },
+
+  partners: {
+    headline: 'Our Partners',
+    description: 'OncoBrain is developed in collaboration with leading cancer centers and supported by prestigious research institutions.',
   },
 }
 
