@@ -5,143 +5,183 @@ export const homepage = {
   hero: {
     badge: 'By Clinicians, For Clinicians',
     headline: 'Think Like an Oncologist',
-    subheadline: 'Clinical reasoning that surfaces the questions you didn\'t know to ask. Guideline-concordant decision support built for the realities of cancer care.',
-    ctaText: 'Request Early Access',
-    ctaSecondaryText: 'Watch Demo',
-    // Optional: Add a video URL for the demo
-    demoVideoUrl: 'https://www.youtube.com/embed/your-video-id',
+    subheadline: 'Turning intelligence into expertise at the speed of care',
+    description: 'Medical knowledge now doubles every 73 days. Oncology guidelines update 241+ times per year. OncoBrain helps clinicians keep pace with rapidly evolving cancer evidence, without sacrificing safety, trust, or clinical judgment.',
+    ctaText: 'Request a Pilot Conversation',
+    ctaSecondaryText: 'See How It Works',
   },
 
   // Problem Statement Section
   problem: {
-    headline: 'The Challenge of Modern Oncology',
-    description: 'The challenge is no longer access to information\u2014it\'s translating rapidly evolving knowledge into confident decisions at the point of care.',
-    quote: {
-      text: 'Chat tools answer the question you ask. Oncology requires surfacing the questions you didn\'t know to ask.',
-      author: 'OncoBrain Clinical Team',
-    },
+    headline: 'Cancer care is evolving faster than humans can track',
+    description: 'The pace and complexity of oncology has outgrown traditional decision-making models. The challenge is no longer access to information—it\'s translating that information into confident decisions at the point of care.',
+    stats: [
+      'Medical knowledge doubles every 73 days',
+      '30-50% of global cancer care remains non-guideline-concordant',
+      '80% of cancer patients are treated outside academic medical centers',
+      '32 million Americans live in counties without access to an oncologist',
+    ],
+    whyItMatters: 'Non-concordant care is directly associated with poorer five-year survival outcomes.',
+  },
+
+  // The Gap Section
+  gap: {
+    headline: 'Information exists. Decision support does not.',
+    description: 'Today\'s options force clinicians to choose between speed, safety, and scalability:',
+    items: [
+      {
+        problem: 'General AI tools',
+        issue: 'deliver fast answers, but carry 40-50% hallucination rates',
+      },
+      {
+        problem: 'Expert consult models',
+        issue: 'are accurate, but slow and difficult to scale',
+      },
+      {
+        problem: 'Guidelines alone',
+        issue: 'are comprehensive, but too complex to synthesize in real time',
+      },
+    ],
+    positioning: 'OncoBrain delivers safe, scalable, specialist-level expertise at the speed of AI—without replacing clinician judgment.',
   },
 
   // Statistics Section
   stats: [
     {
-      value: '30-50%',
-      label: 'of global cancer care is non-guideline concordant',
-      description: 'Patients receive care that doesn\'t align with best practices',
+      value: '5.0/5.0',
+      label: 'Efficiency',
+      description: 'Physician-rated in pilot evaluations',
     },
     {
-      value: '80%',
-      label: 'of patients treated outside academic centers',
-      description: 'Community oncologists lack specialist consultation access',
+      value: '4.6/5.0',
+      label: 'Accuracy',
+      description: 'Clinically validated recommendations',
     },
     {
-      value: '73 days',
-      label: 'for medical knowledge to double',
-      description: 'Impossible for any clinician to keep pace manually',
+      value: '4.8/5.0',
+      label: 'Safety & Reliability',
+      description: 'Trust signals that matter most',
+    },
+    {
+      value: '<1%',
+      label: 'Hallucination Rate',
+      description: 'vs 40-50% for general LLMs',
     },
   ],
+
+  // What OncoBrain Does Section
+  whatItDoes: {
+    headline: 'The world\'s first oncology-specific clinical reasoning engine',
+    description: 'OncoBrain reasons through cancer cases the way an expert oncologist would:',
+    points: [
+      'Synthesizes guidelines, literature, and patient-specific context',
+      'Delivers guideline-concordant, patient-specific insights in real time',
+      'Acts as a clinical assurance layer, not an autonomous decision-maker',
+    ],
+    result: 'The result: clearer decisions, made faster, with confidence.',
+  },
 
   // How It Works Section
   howItWorks: {
     headline: 'How OncoBrain Works',
-    subheadline: 'Clinical intelligence that fits your workflow',
+    subheadline: 'Consumes. Interprets. Advises. Anticipates.',
+    description: 'OncoBrain is built to mirror expert clinical reasoning—not keyword search.',
     steps: [
       {
         number: '01',
-        title: 'Input Case Details',
-        description: 'Enter patient history, imaging, pathology, and biomarkers through an intuitive clinical interface.',
+        title: 'Consumes',
+        description: 'Ingests structured and unstructured clinical data from patient records, imaging, and pathology.',
         icon: 'clipboard',
       },
       {
         number: '02',
-        title: 'Guideline Analysis',
-        description: 'OncoBrain reasons through NCCN, ASCO, and ESMO guidelines to identify the most relevant recommendations.',
+        title: 'Interprets',
+        description: 'Processes that data using an oncology-specific inference layer trained on 1M+ Moffitt patients.',
         icon: 'brain',
       },
       {
         number: '03',
-        title: 'Validated Recommendations',
-        description: 'Receive evidence-based therapy options with full citations, rationale, and confidence scoring.',
+        title: 'Advises',
+        description: 'Delivers peer-level, explainable reasoning grounded in NCCN, ASCO, and peer-reviewed literature.',
         icon: 'checkCircle',
+      },
+      {
+        number: '04',
+        title: 'Anticipates',
+        description: 'Surfaces missed considerations and next clinical questions before you ask them.',
+        icon: 'lightbulb',
       },
     ],
   },
 
   // Features Section
   features: {
-    headline: 'Built for Clinical Reality',
-    subheadline: 'Safe, scalable, specialist expertise at the speed of AI',
+    headline: 'Built for Safety You Can See',
+    subheadline: 'Explainability is the feature',
+    description: 'Trust in clinical AI depends on transparency. OncoBrain is designed with safety and explainability at its core.',
     items: [
       {
-        title: 'Evidence-Based',
-        description: 'Every recommendation traced to peer-reviewed sources and clinical guidelines.',
-        icon: 'book',
+        title: 'Specialized Inference Engine',
+        description: 'Oncology-specific reasoning, not general medical AI adapted for cancer.',
+        icon: 'brain',
       },
       {
-        title: 'Fully Transparent',
-        description: 'See the complete reasoning chain. No black boxes. Full explainability.',
-        icon: 'eye',
-      },
-      {
-        title: 'Clinician-Validated',
-        description: 'Developed and tested with oncologists at Moffitt Cancer Center.',
-        icon: 'users',
-      },
-      {
-        title: 'HIPAA Compliant',
-        description: 'Enterprise-grade security. Your patient data stays protected.',
+        title: 'Multiple Verification Loops',
+        description: 'Recommendations are verified multiple times before being surfaced.',
         icon: 'shield',
       },
       {
-        title: 'EMR Ready',
-        description: 'Designed for seamless integration with Epic, Cerner, and other systems.',
-        icon: 'plug',
+        title: '<1% Hallucination Rate',
+        description: 'Compared to 40-50% with general LLMs—a critical safety difference.',
+        icon: 'target',
       },
       {
-        title: '99.8% Accuracy',
-        description: 'Rigorous clinical validation against gold-standard oncology cases.',
-        icon: 'target',
+        title: 'Full Traceability',
+        description: 'Every recommendation traced to NCCN, ASCO, and peer-reviewed literature.',
+        icon: 'book',
+      },
+      {
+        title: 'Human-in-the-Loop',
+        description: 'Acts as a clinical assurance layer, not an autonomous decision-maker.',
+        icon: 'users',
+      },
+      {
+        title: 'Enterprise-Ready',
+        description: 'Private cloud deployment. Health systems retain full data ownership.',
+        icon: 'lock',
       },
     ],
   },
 
-  // Testimonials Section
-  testimonials: {
-    headline: 'Trusted by Oncologists',
-    items: [
-      {
-        quote: 'OncoBrain helps me stay current with rapidly evolving treatment landscapes. It\'s like having a tumor board on call 24/7.',
-        author: 'Dr. Sarah Chen',
-        role: 'Medical Oncologist',
-        organization: 'Community Cancer Center',
-        image: '/images/testimonials/doctor-1.jpg',
-      },
-      {
-        quote: 'The transparency is what convinced me. I can see exactly why OncoBrain made each recommendation and verify it myself.',
-        author: 'Dr. Michael Torres',
-        role: 'Hematology-Oncology',
-        organization: 'Regional Medical Center',
-        image: '/images/testimonials/doctor-2.jpg',
-      },
-      {
-        quote: 'For complex cases with multiple comorbidities, OncoBrain surfaces considerations I might have missed under time pressure.',
-        author: 'Dr. Emily Rodriguez',
-        role: 'Breast Oncology Specialist',
-        organization: 'University Health System',
-        image: '/images/testimonials/doctor-3.jpg',
-      },
+  // Speed Section
+  speed: {
+    headline: 'Faster decisions without cutting corners',
+    description: 'OncoBrain delivers guidance in seconds, while reducing time spent on high-burden tasks:',
+    tasks: [
+      'Real-time search and dynamic reconciling of guidelines',
+      'Reviewing dense patient histories',
+      'Identifying relevant clinical trials and new therapies',
+      'Recommending optimal, guideline-concordant treatment planning',
     ],
+    result: 'The result is speed that strengthens care, not speed that compromises it.',
+  },
+
+  // Early Validation Section
+  validation: {
+    headline: 'Designed for trust. Validated by clinicians.',
+    description: 'In early pilot evaluations, clinicians rated OncoBrain highly across the dimensions that matter most.',
+    ctaText: 'See How It Works',
   },
 
   // CTA Section
   cta: {
     headline: 'Ready to Transform Your Practice?',
-    description: 'Join the community of oncologists using evidence-based AI to deliver guideline-concordant care.',
-    ctaText: 'Request Early Access',
+    description: 'Join leading oncologists using evidence-based AI to deliver guideline-concordant care at the speed your patients deserve.',
+    ctaText: 'Request a Pilot Conversation',
     features: [
-      'Free pilot program',
-      'Dedicated onboarding support',
-      'No credit card required',
+      'Pilot program available',
+      'Dedicated clinical onboarding',
+      'Enterprise-grade security',
     ],
   },
 }
