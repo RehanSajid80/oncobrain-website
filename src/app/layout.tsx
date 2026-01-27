@@ -7,27 +7,99 @@ import { siteConfig } from '@/content/site'
 
 const barlow = Barlow({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'], variable: '--font-barlow' })
 
+const siteUrl = 'https://oncobrain.ai'
+
 export const metadata: Metadata = {
+  // Basic Meta Tags
   title: {
-    default: siteConfig.name,
+    default: `${siteConfig.name} - ${siteConfig.tagline}`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  keywords: ['oncology', 'clinical decision support', 'cancer care', 'AI healthcare', 'guideline concordant care'],
-  authors: [{ name: 'OncoBrain', url: 'https://oncobrain.ai' }],
+
+  // SEO Keywords
+  keywords: [
+    'oncology AI',
+    'clinical decision support',
+    'cancer care',
+    'guideline concordant care',
+    'NCCN guidelines',
+    'ASCO guidelines',
+    'oncology clinical reasoning',
+    'cancer treatment recommendations',
+    'AI healthcare',
+    'medical AI',
+    'oncology decision support',
+    'cancer care AI',
+    'clinical AI',
+    'healthcare technology',
+    'precision oncology',
+  ],
+
+  // Authors & Creator
+  authors: [{ name: 'OncoBrain', url: siteUrl }],
+  creator: 'OncoBrain',
+  publisher: 'OncoBrain',
+
+  // Robots
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+
+  // Canonical URL
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: '/',
+  },
+
+  // Open Graph (Facebook, LinkedIn)
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://oncobrain.ai',
+    url: siteUrl,
     siteName: siteConfig.name,
-    title: siteConfig.name,
+    title: `${siteConfig.name} - ${siteConfig.tagline}`,
     description: siteConfig.description,
+    images: [
+      {
+        url: '/oncobrain-website/logos/oncobrain-logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'OncoBrain - Clinical Intelligence for Oncology',
+      },
+    ],
   },
+
+  // Twitter Card
   twitter: {
     card: 'summary_large_image',
-    title: siteConfig.name,
+    title: `${siteConfig.name} - ${siteConfig.tagline}`,
     description: siteConfig.description,
+    images: ['/oncobrain-website/logos/oncobrain-logo.png'],
+    creator: '@oncobrain',
   },
+
+  // Icons & Favicon
+  icons: {
+    icon: [
+      { url: '/oncobrain-website/icons/oncobrain-icon.svg', type: 'image/svg+xml' },
+    ],
+    apple: [
+      { url: '/oncobrain-website/logos/oncobrain-logo.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+
+  // Additional Meta
+  category: 'Healthcare Technology',
+  classification: 'Medical AI, Clinical Decision Support',
 }
 
 export default function RootLayout({
