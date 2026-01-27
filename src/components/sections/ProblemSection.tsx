@@ -6,13 +6,15 @@ import { Quote } from 'lucide-react'
 interface ProblemSectionProps {
   headline: string
   description: string
+  stats?: string[]
+  whyItMatters?: string
   quote?: {
     text: string
     author: string
   }
 }
 
-export function ProblemSection({ headline, description, quote }: ProblemSectionProps) {
+export function ProblemSection({ headline, description, stats, whyItMatters, quote }: ProblemSectionProps) {
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="container-narrow">
@@ -26,9 +28,52 @@ export function ProblemSection({ headline, description, quote }: ProblemSectionP
           <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-6">
             {headline}
           </h2>
-          <p className="text-lg md:text-xl text-text-secondary mb-12 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-text-secondary mb-8 max-w-3xl mx-auto">
             {description}
           </p>
+
+          {/* Stats as bullet points */}
+          {stats && stats.length > 0 && (
+            <motion.ul
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-left max-w-2xl mx-auto mb-8 space-y-3"
+            >
+              {stats.map((stat, index) => (
+                <li key={index} className="flex items-start gap-3 text-lg text-text-secondary">
+                  <span className="text-teal-500 font-bold mt-1">•</span>
+                  <span>{stat}</span>
+                </li>
+              ))}
+            </motion.ul>
+          )}
+
+          {/* Why it matters */}
+          {whyItMatters && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="max-w-3xl mx-auto mb-8"
+            >
+              <p className="text-lg font-semibold text-navy-800 mb-2">Why it matters</p>
+              <p className="text-lg text-text-secondary">{whyItMatters}</p>
+            </motion.div>
+          )}
+
+          {/* Closing statement */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-lg text-text-secondary mb-12 max-w-3xl mx-auto"
+          >
+            The challenge is no longer access to information—it's translating that information into confident decisions at the point of care.
+          </motion.p>
 
           {quote && (
             <div className="relative max-w-3xl mx-auto">

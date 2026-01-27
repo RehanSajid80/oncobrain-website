@@ -14,10 +14,10 @@ export const homepage = {
   // Problem Statement Section
   problem: {
     headline: 'Cancer care is evolving faster than humans can track',
-    description: 'The pace and complexity of oncology has outgrown traditional decision-making models. The challenge is no longer access to information—it\'s translating that information into confident decisions at the point of care.',
+    description: 'The pace and complexity of oncology has outgrown traditional decision-making models:',
     stats: [
       'Medical knowledge doubles every 73 days',
-      '30-50% of global cancer care remains non-guideline-concordant',
+      '30–50% of global cancer care remains non–guideline-concordant',
       '80% of cancer patients are treated outside academic medical centers',
       '32 million Americans live in counties without access to an oncologist',
     ],

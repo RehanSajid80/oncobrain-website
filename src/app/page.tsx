@@ -30,6 +30,8 @@ export default function HomePage() {
       <ProblemSection
         headline={homepage.problem.headline}
         description={homepage.problem.description}
+        stats={homepage.problem.stats}
+        whyItMatters={homepage.problem.whyItMatters}
         quote={homepage.problem.quote}
       />
 
