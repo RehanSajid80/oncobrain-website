@@ -74,12 +74,12 @@ function TeamMemberCard({
   )
 }
 
-// Affiliation logo component
+// Affiliation logo component - styled text badges
 function AffiliationLogo({
   logo,
   index
 }: {
-  logo: { name: string; logo: string }
+  logo: { name: string; logo?: string }
   index: number
 }) {
   return (
@@ -88,19 +88,11 @@ function AffiliationLogo({
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.05 }}
-      className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow h-24"
+      className="flex items-center justify-center p-6 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-teal-200 transition-all h-24"
     >
-      <img
-        src={logo.logo}
-        alt={logo.name}
-        className="h-12 w-auto max-w-full object-contain"
-        onError={(e) => {
-          // Fallback to text if logo fails to load
-          const target = e.target as HTMLImageElement
-          target.style.display = 'none'
-          target.parentElement!.innerHTML = `<span class="text-sm font-medium text-gray-600 text-center">${logo.name}</span>`
-        }}
-      />
+      <span className="text-sm font-semibold text-gray-700 text-center leading-tight">
+        {logo.name}
+      </span>
     </motion.div>
   )
 }

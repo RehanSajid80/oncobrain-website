@@ -96,23 +96,23 @@ export const teamPage = {
     ],
   },
 
-  // Partner & Advisor Affiliations (logos)
-  // Using Clearbit Logo API for company logos - free service
+  // Partner & Advisor Affiliations
+  // To add logos: place image files in /public/logos/affiliations/ and add logo path
   affiliations: {
     headline: 'Our Team\'s Experience Includes',
     logos: [
-      { name: 'Loyola University Chicago', logo: 'https://logo.clearbit.com/luc.edu' },
-      { name: 'World Health Organization', logo: 'https://logo.clearbit.com/who.int' },
-      { name: 'UCLA', logo: 'https://logo.clearbit.com/ucla.edu' },
-      { name: 'Chewy', logo: 'https://logo.clearbit.com/chewy.com' },
-      { name: 'Harvard Medical School', logo: 'https://logo.clearbit.com/hms.harvard.edu' },
-      { name: 'Partners Healthcare', logo: 'https://logo.clearbit.com/massgeneralbrigham.org' },
-      { name: 'T-Mobile', logo: 'https://logo.clearbit.com/t-mobile.com' },
-      { name: 'KPMG', logo: 'https://logo.clearbit.com/kpmg.com' },
-      { name: 'BCG', logo: 'https://logo.clearbit.com/bcg.com' },
-      { name: 'Penn', logo: 'https://logo.clearbit.com/upenn.edu' },
-      { name: 'MGH', logo: 'https://logo.clearbit.com/massgeneral.org' },
-      { name: 'UCSF', logo: 'https://logo.clearbit.com/ucsf.edu' },
+      { name: 'Loyola University Chicago' },
+      { name: 'World Health Organization' },
+      { name: 'UCLA' },
+      { name: 'Chewy' },
+      { name: 'Harvard Medical School' },
+      { name: 'Partners Healthcare' },
+      { name: 'T-Mobile' },
+      { name: 'KPMG' },
+      { name: 'BCG' },
+      { name: 'Penn' },
+      { name: 'MGH' },
+      { name: 'UCSF' },
     ],
   },
 }
