@@ -97,22 +97,21 @@ export const teamPage = {
   },
 
   // Partner & Advisor Affiliations
-  // To add logos: place image files in /public/logos/affiliations/ and add logo path
   affiliations: {
     headline: 'Our Team\'s Experience Includes',
     logos: [
-      { name: 'Loyola University Chicago' },
-      { name: 'World Health Organization' },
-      { name: 'UCLA' },
-      { name: 'Chewy' },
-      { name: 'Harvard Medical School' },
-      { name: 'Partners Healthcare' },
-      { name: 'T-Mobile' },
-      { name: 'KPMG' },
-      { name: 'BCG' },
-      { name: 'Penn' },
-      { name: 'MGH' },
-      { name: 'UCSF' },
+      { name: 'Loyola University Chicago', logo: '/logos/affiliations/loyola.svg' },
+      { name: 'World Health Organization', logo: '/logos/affiliations/who.png' },
+      { name: 'UCLA', logo: '/logos/affiliations/ucla.png' },
+      { name: 'Chewy', logo: '/logos/affiliations/chewy.svg' },
+      { name: 'Harvard Medical School', logo: '/logos/affiliations/harvard.png' },
+      { name: 'Partners Healthcare', logo: '/logos/affiliations/partners.svg' },
+      { name: 'T-Mobile', logo: '/logos/affiliations/tmobile.svg' },
+      { name: 'KPMG', logo: '/logos/affiliations/kpmg.svg' },
+      { name: 'BCG', logo: '/logos/affiliations/bcg.png' },
+      { name: 'Penn', logo: '/logos/affiliations/penn.png' },
+      { name: 'MGH', logo: '/logos/affiliations/mgh.svg' },
+      { name: 'UCSF', logo: '/logos/affiliations/ucsf.svg' },
     ],
   },
 }

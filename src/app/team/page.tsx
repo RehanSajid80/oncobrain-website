@@ -74,7 +74,7 @@ function TeamMemberCard({
   )
 }
 
-// Affiliation logo component - styled text badges
+// Affiliation logo component
 function AffiliationLogo({
   logo,
   index
@@ -88,11 +88,19 @@ function AffiliationLogo({
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.05 }}
-      className="flex items-center justify-center p-6 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-teal-200 transition-all h-24"
+      className="flex items-center justify-center p-4 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-teal-200 transition-all h-24"
     >
-      <span className="text-sm font-semibold text-gray-700 text-center leading-tight">
-        {logo.name}
-      </span>
+      {logo.logo ? (
+        <img
+          src={`/oncobrain-website${logo.logo}`}
+          alt={logo.name}
+          className="max-h-14 max-w-full object-contain"
+        />
+      ) : (
+        <span className="text-sm font-semibold text-gray-700 text-center leading-tight">
+          {logo.name}
+        </span>
+      )}
     </motion.div>
   )
 }
