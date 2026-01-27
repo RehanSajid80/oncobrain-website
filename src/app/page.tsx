@@ -7,6 +7,8 @@ import {
   TestimonialsSection,
   CTASection,
   TrustBadges,
+  WhatItDoesSection,
+  ValidationSection,
 } from '@/components/sections'
 import { homepage } from '@/content/homepage'
 
@@ -33,6 +35,26 @@ export default function HomePage() {
         stats={homepage.problem.stats}
         whyItMatters={homepage.problem.whyItMatters}
         quote={homepage.problem.quote}
+      />
+
+      {/* What OncoBrain Does */}
+      <WhatItDoesSection
+        headline={homepage.whatItDoes.headline}
+        description={homepage.whatItDoes.description}
+        points={homepage.whatItDoes.points}
+        result={homepage.whatItDoes.result}
+      />
+
+      {/* Early Validation */}
+      <ValidationSection
+        headline={homepage.validation.headline}
+        description={homepage.validation.description}
+        stats={[
+          { value: '5.0 / 5.0', label: 'Efficiency' },
+          { value: '4.6 / 5.0', label: 'Accuracy' },
+          { value: '4.8 / 5.0', label: 'Safety & Reliability' },
+        ]}
+        ctaText={homepage.validation.ctaText}
       />
 
       {/* Statistics */}
