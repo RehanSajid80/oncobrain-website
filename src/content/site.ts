@@ -9,6 +9,7 @@ export const siteConfig = {
   navigation: [
     { name: 'For Oncologists', href: '/for-oncologists' },
     { name: 'For Health Systems', href: '/for-health-systems' },
+    { name: 'Why OncoBrain', href: '/why-oncobrain' },
     { name: 'Clinical Validation', href: '/clinical-validation' },
     { name: 'About', href: '/about' },
     { name: 'Team', href: '/team' },
@@ -20,6 +21,7 @@ export const siteConfig = {
     product: [
       { name: 'For Oncologists', href: '/for-oncologists' },
       { name: 'For Health Systems', href: '/for-health-systems' },
+      { name: 'Why OncoBrain', href: '/why-oncobrain' },
       { name: 'Clinical Validation', href: '/clinical-validation' },
     ],
     company: [
