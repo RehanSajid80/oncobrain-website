@@ -110,13 +110,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={barlow.variable}>
       <head>
-        {/* HubSpot Tracking Code - Replace YOUR_PORTAL_ID with your actual HubSpot portal ID */}
+        {/* HubSpot Tracking Code */}
         <script
           type="text/javascript"
           id="hs-script-loader"
           async
           defer
-          src="//js.hs-scripts.com/YOUR_PORTAL_ID.js"
+          src="//js.hs-scripts.com/244017401.js"
         />
       </head>
       <body className="min-h-screen flex flex-col">
