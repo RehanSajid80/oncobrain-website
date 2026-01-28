@@ -1,7 +1,6 @@
 import {
   HeroSection,
   ProblemSection,
-  StatsSection,
   HowItWorksSection,
   FeaturesSection,
   TestimonialsSection,
@@ -55,12 +54,6 @@ export default function HomePage() {
           { value: '4.8 / 5.0', label: 'Safety & Reliability' },
         ]}
         ctaText={homepage.validation.ctaText}
-      />
-
-      {/* Statistics */}
-      <StatsSection
-        stats={homepage.stats}
-        headline="The Guideline Gap in Cancer Care"
       />
 
       {/* How It Works */}
