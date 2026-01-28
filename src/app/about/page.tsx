@@ -1,7 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Target, Eye, Flag, Heart, Zap, Users, Shield, Sparkles } from 'lucide-react'
+import { Target, Eye, Flag, Heart, Zap, Users, Shield, Sparkles, ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 import { Card } from '@/components/ui'
 import { about } from '@/content/pages'
 
@@ -166,6 +167,35 @@ export default function AboutPage() {
                 </motion.div>
               )
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Meet Our Team CTA */}
+      <section className="py-16 md:py-24 bg-gradient-to-br from-[#081923] to-[#0a2540] text-white">
+        <div className="container-wide">
+          <div className="max-w-3xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <Users className="w-16 h-16 mx-auto mb-6 text-teal-400" />
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Meet Our Team
+              </h2>
+              <p className="text-xl text-gray-300 mb-8">
+                OncoBrain is built by a team of oncologists, AI researchers, and healthcare leaders committed to transforming cancer care.
+              </p>
+              <Link
+                href="/team"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-teal-500 hover:bg-teal-400 text-white font-semibold rounded-xl transition-colors"
+              >
+                View Our Team
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>
