@@ -34,7 +34,6 @@ export default function HomePage() {
         description={homepage.problem.description}
         stats={homepage.problem.stats}
         whyItMatters={homepage.problem.whyItMatters}
-        quote={homepage.problem.quote}
       />
 
       {/* The Gap - Dark contrasting section */}
