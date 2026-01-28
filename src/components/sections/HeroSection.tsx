@@ -80,18 +80,18 @@ export function HeroSection({
             </div>
 
             {/* Trust Indicators */}
-            <div className="mt-10 flex items-center gap-8 text-sm text-text-muted">
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-success rounded-full" />
-                <span>HIPAA Compliant</span>
+            <div className="mt-10 flex flex-wrap items-center gap-6 md:gap-10">
+              <div className="flex items-center gap-3">
+                <div className="w-3 h-3 bg-success rounded-full" />
+                <span className="text-base md:text-lg font-semibold text-navy-700">HIPAA Compliant</span>
               </div>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-success rounded-full" />
-                <span>99.8% Accuracy</span>
+              <div className="flex items-center gap-3">
+                <div className="w-3 h-3 bg-success rounded-full" />
+                <span className="text-base md:text-lg font-semibold text-navy-700">99.8% Accuracy</span>
               </div>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-success rounded-full" />
-                <span>Moffitt Validated</span>
+              <div className="flex items-center gap-3">
+                <div className="w-3 h-3 bg-success rounded-full" />
+                <span className="text-base md:text-lg font-semibold text-navy-700">Clinically Validated</span>
               </div>
             </div>
           </motion.div>
