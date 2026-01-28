@@ -60,11 +60,14 @@ export function HubSpotEmbed({
     if (window.hbspt) {
       loadForm()
     } else {
-      // Load HubSpot forms script
+      // Load HubSpot forms script (use region-specific URL)
       const script = document.createElement('script')
-      script.src = '//js.hsforms.net/forms/embed/v2.js'
+      script.src = region === 'na2'
+        ? `https://js-${region}.hsforms.net/forms/embed/v2.js`
+        : '//js.hsforms.net/forms/embed/v2.js'
       script.charset = 'utf-8'
       script.type = 'text/javascript'
+      script.defer = true
       script.onload = loadForm
       document.head.appendChild(script)
     }

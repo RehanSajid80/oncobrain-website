@@ -3,10 +3,10 @@
 
 export const hubspotConfig = {
   // Your HubSpot Portal ID - find this in HubSpot Settings > Account Setup > Account Info
-  portalId: 'YOUR_PORTAL_ID',
+  portalId: '244017401',
 
-  // Your HubSpot region (na1 for North America, eu1 for Europe)
-  region: 'na1',
+  // Your HubSpot region (na1 for North America, na2 for North America 2, eu1 for Europe)
+  region: 'na2',
 }
 
 export const hubspotForms = {
@@ -27,7 +27,7 @@ export const hubspotForms = {
   // General Contact Form (Contact page)
   contact: {
     portalId: hubspotConfig.portalId,
-    formId: 'YOUR_CONTACT_FORM_ID',
+    formId: '3e69338f-17ee-4290-8c39-6ba87138a739',
     region: hubspotConfig.region,
   },
 

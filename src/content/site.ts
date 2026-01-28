@@ -13,6 +13,7 @@ export const siteConfig = {
     { name: 'Clinical Validation', href: '/clinical-validation' },
     { name: 'About', href: '/about' },
     { name: 'Team', href: '/team' },
+    { name: 'Contact', href: '/contact' },
   ],
 
   // Footer Links
@@ -26,6 +27,7 @@ export const siteConfig = {
     company: [
       { name: 'About Us', href: '/about' },
       { name: 'Team', href: '/team' },
+      { name: 'Contact', href: '/contact' },
       { name: 'Careers', href: '/careers' },
     ],
     legal: [
