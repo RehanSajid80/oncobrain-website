@@ -12,7 +12,6 @@ export const siteConfig = {
     { name: 'Why OncoBrain', href: '/why-oncobrain' },
     { name: 'Clinical Validation', href: '/clinical-validation' },
     { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
   ],
 
   // Footer Links
