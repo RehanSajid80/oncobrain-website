@@ -35,15 +35,15 @@ export const homepage = {
     items: [
       {
         problem: 'General AI tools',
-        issue: 'deliver fast answers, but carry 40-50% hallucination rates',
+        issue: 'Deliver fast answers, but carry 40–50% hallucination rates',
       },
       {
         problem: 'Expert consult models',
-        issue: 'are accurate, but slow and difficult to scale',
+        issue: 'Are accurate, but slow and difficult to scale',
       },
       {
         problem: 'Guidelines alone',
-        issue: 'are comprehensive, but too complex to synthesize in real time',
+        issue: 'Are comprehensive, but too complex to synthesize in real time',
       },
     ],
     positioning: 'OncoBrain delivers safe, scalable, specialist-level expertise at the speed of AI—without replacing clinician judgment.',

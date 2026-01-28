@@ -1,6 +1,7 @@
 import {
   HeroSection,
   ProblemSection,
+  GapSection,
   HowItWorksSection,
   FeaturesSection,
   TestimonialsSection,
@@ -36,7 +37,15 @@ export default function HomePage() {
         quote={homepage.problem.quote}
       />
 
-      {/* What OncoBrain Does */}
+      {/* The Gap - Dark contrasting section */}
+      <GapSection
+        headline={homepage.gap.headline}
+        description={homepage.gap.description}
+        items={homepage.gap.items}
+        positioning={homepage.gap.positioning}
+      />
+
+      {/* What OncoBrain Does - The Solution */}
       <WhatItDoesSection
         headline={homepage.whatItDoes.headline}
         description={homepage.whatItDoes.description}
