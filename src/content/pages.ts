@@ -68,7 +68,7 @@ export const forHealthSystems = {
   hero: {
     badge: 'For Health Systems',
     headline: 'Consistent, High-Quality Oncology Care Across Every Site',
-    subheadline: 'Health systems adopt OncoBrain to deliver consistent, high-quality oncology care across every site—reducing variation while preserving clinician autonomy.',
+    subheadline: 'Health systems adopt OncoBrain to deliver consistent, high-quality oncology standardized care pathways across every site—reducing variation while preserving clinician autonomy.',
   },
 
   challenges: {
@@ -85,9 +85,9 @@ export const forHealthSystems = {
         metric: '100%',
       },
       {
-        title: 'EHR-Aligned Workflows',
-        description: 'Designed for seamless integration with Epic, Cerner, and other major systems.',
-        metric: 'Epic',
+        title: 'EMR Native Workflows',
+        description: 'Designed for seamless integration with major EMR systems.',
+        metric: 'EMR',
       },
       {
         title: 'Enterprise Data Control',

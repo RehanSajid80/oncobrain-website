@@ -125,10 +125,10 @@ export default function ForHealthSystemsPage() {
       <section className="py-12 bg-white border-y border-gray-100">
         <div className="container-wide">
           <p className="text-center text-sm font-medium text-text-muted uppercase tracking-wider mb-8">
-            Integrates With
+            Explore Integrations With
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-12">
-            {['Epic', 'Cerner', 'MEDITECH', 'Allscripts'].map((name) => (
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+            {['EMR Native', 'Athena', 'OncoEMR', 'MEDITECH', 'Allscripts'].map((name) => (
               <div key={name} className="bg-gray-100 rounded-lg px-6 py-3 text-text-muted font-medium">
                 {name}
               </div>
