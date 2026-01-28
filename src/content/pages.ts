@@ -250,7 +250,7 @@ export const whyOncoBrain = {
     headline: 'Proprietary Clinical Moat',
     description: 'This foundation enables precise, patient-specific treatment reasoning—not generic recommendations.',
     items: [
-      { label: 'Moffitt\'s mCAP dataset of more than 1 million patients' },
+      { label: 'mCAP dataset of more than 1 million patients' },
       { label: '2,400+ data points per case' },
       { label: 'Longitudinal outcomes data extending five years to death' },
       { label: 'Continuous synchronization with NCCN and ASCO guidelines' },
