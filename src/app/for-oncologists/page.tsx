@@ -1,18 +1,45 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Clock, BookOpen, Users, Puzzle, Check, ArrowRight } from 'lucide-react'
-import { Button, Badge, Card } from '@/components/ui'
-import { HubSpotEmbed } from '@/components/forms/HubSpotEmbed'
-import { hubspotForms } from '@/content/hubspot'
+import { Clock, BookOpen, Users, AlertTriangle, Check, ArrowRight } from 'lucide-react'
+import { Button, Badge } from '@/components/ui'
 import { forOncologists } from '@/content/pages'
 
-const icons = {
-  clock: Clock,
-  book: BookOpen,
-  users: Users,
-  puzzle: Puzzle,
-}
+// Challenge-Solution pairs
+const challengeSolutions = [
+  {
+    challenge: 'Knowledge Overload',
+    challengeShort: 'Guidelines update 241+ times/year',
+    solution: 'Always Current',
+    solutionShort: 'OncoBrain stays current so you can focus on care',
+    challengeIcon: BookOpen,
+    challengeColor: 'amber',
+  },
+  {
+    challenge: 'Limited Specialist Access',
+    challengeShort: '80% of patients treated outside academic centers',
+    solution: 'Expert Reasoning On-Demand',
+    solutionShort: 'Subspecialty-level thinking without the wait',
+    challengeIcon: Users,
+    challengeColor: 'amber',
+  },
+  {
+    challenge: 'Cognitive Burden',
+    challengeShort: 'High-burden tasks take time from patients',
+    solution: 'Faster Decisions',
+    solutionShort: 'NCCN/ASCO-aligned recommendations in seconds',
+    challengeIcon: Clock,
+    challengeColor: 'amber',
+  },
+  {
+    challenge: 'Fear of Missing Updates',
+    challengeShort: 'Critical changes can affect outcomes',
+    solution: 'Confidence Without Doubt',
+    solutionShort: 'Clinical assurance that strengthens every decision',
+    challengeIcon: AlertTriangle,
+    challengeColor: 'amber',
+  },
+]
 
 export default function ForOncologistsPage() {
   return (
@@ -35,7 +62,7 @@ export default function ForOncologistsPage() {
               <p className="text-lg text-text-secondary mb-8">
                 {forOncologists.hero.subheadline}
               </p>
-              <Button variant="primary" size="lg" href="#request-access">
+              <Button variant="primary" size="lg" href="/contact">
                 Request Early Access
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -62,41 +89,79 @@ export default function ForOncologistsPage() {
         </div>
       </section>
 
-      {/* Pain Points Section */}
+      {/* Combined Challenge → Solution Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container-wide">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-4">
-              {forOncologists.painPoints.headline}
-            </h2>
+          <div className="text-center mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-4">
+                Your Challenges, Solved
+              </h2>
+              <p className="text-lg text-text-secondary max-w-2xl mx-auto">
+                OncoBrain addresses the daily realities of oncology practice
+              </p>
+            </motion.div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {forOncologists.painPoints.items.map((item, index) => {
-              const Icon = icons[item.icon as keyof typeof icons] || Clock
+          <div className="space-y-4">
+            {challengeSolutions.map((item, index) => {
+              const ChallengeIcon = item.challengeIcon
               return (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  className="group"
                 >
-                  <Card className="h-full border-l-4 border-l-amber-400">
-                    <div className="flex gap-4">
-                      <div className="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-6 h-6 text-amber-500" />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-navy-800 mb-2">
-                          {item.title}
-                        </h3>
-                        <p className="text-text-secondary">
-                          {item.description}
-                        </p>
+                  <div className="grid md:grid-cols-2 gap-0 bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
+                    {/* Challenge Side */}
+                    <div className="p-6 md:p-8 border-b md:border-b-0 md:border-r border-gray-200 bg-gradient-to-r from-amber-50 to-gray-50">
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                          <ChallengeIcon className="w-5 h-5 text-amber-600" />
+                        </div>
+                        <div>
+                          <p className="text-xs font-medium text-amber-600 uppercase tracking-wider mb-1">Challenge</p>
+                          <h3 className="text-lg font-semibold text-navy-800 mb-1">
+                            {item.challenge}
+                          </h3>
+                          <p className="text-text-secondary text-sm">
+                            {item.challengeShort}
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </Card>
+
+                    {/* Solution Side */}
+                    <div className="p-6 md:p-8 bg-gradient-to-r from-gray-50 to-teal-50 relative">
+                      {/* Arrow connector for desktop */}
+                      <div className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center z-10">
+                        <ArrowRight className="w-4 h-4 text-teal-500" />
+                      </div>
+
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 bg-teal-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                          <Check className="w-5 h-5 text-teal-600" />
+                        </div>
+                        <div>
+                          <p className="text-xs font-medium text-teal-600 uppercase tracking-wider mb-1">Solution</p>
+                          <h3 className="text-lg font-semibold text-navy-800 mb-1">
+                            {item.solution}
+                          </h3>
+                          <p className="text-text-secondary text-sm">
+                            {item.solutionShort}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </motion.div>
               )
             })}
@@ -104,47 +169,8 @@ export default function ForOncologistsPage() {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="py-16 md:py-24 bg-gray-50">
-        <div className="container-wide">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-4">
-              {forOncologists.benefits.headline}
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {forOncologists.benefits.items.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <Card hover className="h-full">
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Check className="w-5 h-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-navy-800 mb-2">
-                        {item.title}
-                      </h3>
-                      <p className="text-text-secondary">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section id="request-access" className="py-16 md:py-24 bg-gradient-dark text-white">
+      <section className="py-16 md:py-24 bg-gradient-dark text-white">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -157,7 +183,7 @@ export default function ForOncologistsPage() {
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-teal-400" />
-                  <span>Free pilot program for qualified practices</span>
+                  <span>OncoBrain Direct access available for individuals and enterprises</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-teal-400" />
@@ -170,14 +196,20 @@ export default function ForOncologistsPage() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-2xl p-8">
+            <div className="bg-white rounded-2xl p-8 text-center">
               <h3 className="text-xl font-semibold text-navy-800 mb-2">
                 Request Early Access
               </h3>
               <p className="text-text-secondary mb-6">
-                Fill out the form and we'll be in touch within 24 hours.
+                Ready to see how OncoBrain can support your practice?
               </p>
-              <HubSpotEmbed {...hubspotForms.demoRequest} />
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 w-full py-4 px-6 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold rounded-xl transition-all duration-200"
+              >
+                Contact Us
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>
