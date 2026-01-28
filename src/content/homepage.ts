@@ -100,7 +100,7 @@ export const homepage = {
       {
         number: '02',
         title: 'Interprets',
-        description: 'Processes that data using an oncology-specific inference layer trained on 1M+ Moffitt patients.',
+        description: 'Processes that data using an oncology-specific inference layer trained on 1M+ patients.',
         icon: 'brain',
       },
       {
