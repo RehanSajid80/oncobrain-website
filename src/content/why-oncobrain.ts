@@ -17,7 +17,7 @@ export const whyOncobrain = {
       'Continuous synchronization with NCCN and ASCO guidelines',
       'Patent-protected oncology data structuring and reasoning technology',
     ],
-    conclusion: 'This foundation enables precise, patient-specific treatment reasoning—not generic recommendations.',
+    conclusion: 'This foundation enables precise, patient-specific treatment reasoning, not generic recommendations.',
   },
 
   // Section 2: Enterprise-Ready by Design

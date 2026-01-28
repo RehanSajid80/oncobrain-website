@@ -181,18 +181,18 @@ export default function ForOncologistsPage() {
               <p className="text-lg text-gray-300 mb-8">
                 {forOncologists.cta.description}
               </p>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-3">
-                  <Check className="w-5 h-5 text-teal-400" />
-                  <span>OncoBrain Direct access available for individuals and enterprises</span>
+              <ul className="space-y-4">
+                <li className="flex items-center gap-4">
+                  <Check className="w-6 h-6 text-teal-400 flex-shrink-0" />
+                  <span className="text-lg font-semibold">OncoBrain Direct access available for individuals and enterprises</span>
                 </li>
-                <li className="flex items-center gap-3">
-                  <Check className="w-5 h-5 text-teal-400" />
-                  <span>No credit card required</span>
+                <li className="flex items-center gap-4">
+                  <Check className="w-6 h-6 text-teal-400 flex-shrink-0" />
+                  <span className="text-lg font-semibold">No credit card required</span>
                 </li>
-                <li className="flex items-center gap-3">
-                  <Check className="w-5 h-5 text-teal-400" />
-                  <span>Dedicated onboarding support</span>
+                <li className="flex items-center gap-4">
+                  <Check className="w-6 h-6 text-teal-400 flex-shrink-0" />
+                  <span className="text-lg font-semibold">Dedicated onboarding support</span>
                 </li>
               </ul>
             </div>

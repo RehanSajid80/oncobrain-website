@@ -15,7 +15,7 @@ export const ahaRuralConference2026 = {
     badge: 'AHA Rural Healthcare Conference 2026',
     headline: 'Experience OncoBrain',
     subheadline: 'Get 4 weeks of unlimited access to the world\'s first oncology-specific clinical reasoning engine.',
-    description: 'See how OncoBrain helps community and rural oncologists make faster, guideline-concordant treatment decisions—without sacrificing safety or clinical judgment.',
+    description: 'See how OncoBrain helps community and rural oncologists make faster, guideline-concordant treatment decisions, without sacrificing safety or clinical judgment.',
     ctaText: 'Start Your Free Trial',
   },
 
@@ -74,7 +74,7 @@ export const ahaRuralConference2026 = {
       'Subspecialty-level reasoning without the wait for consults',
       'Stay current with rapidly evolving guidelines automatically',
       'Reduce cognitive burden on high-volume case days',
-      'Full transparency—see exactly why each recommendation is made',
+      'Full transparency. See exactly why each recommendation is made',
     ],
   },
 

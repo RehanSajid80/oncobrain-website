@@ -23,12 +23,12 @@ export const forOncologists = {
       },
       {
         title: 'Cognitive Burden',
-        description: 'Searching guidelines, reviewing patient histories, identifying trials—high-burden tasks that take time from patient care.',
+        description: 'Searching guidelines, reviewing patient histories, identifying trials. High-burden tasks that take time from patient care.',
         icon: 'brain',
       },
       {
         title: 'Fear of Missing Updates',
-        description: 'Guideline changes, new therapies, emerging biomarkers—the cost of missing a critical update can affect patient outcomes.',
+        description: 'Guideline changes, new therapies, emerging biomarkers. The cost of missing a critical update can affect patient outcomes.',
         icon: 'alert',
       },
     ],
@@ -59,7 +59,7 @@ export const forOncologists = {
   cta: {
     headline: 'Ready to Practice with Confidence?',
     description: 'Join oncologists who are already using OncoBrain to deliver guideline-concordant care.',
-    ctaText: 'Request a Pilot Conversation',
+    ctaText: 'Schedule a Conversation',
   },
 }
 
@@ -68,7 +68,7 @@ export const forHealthSystems = {
   hero: {
     badge: 'For Health Systems',
     headline: 'Consistent, High-Quality Oncology Care Across Every Site',
-    subheadline: 'Health systems adopt OncoBrain to deliver consistent, high-quality oncology standardized care pathways across every site—reducing variation while preserving clinician autonomy.',
+    subheadline: 'Health systems adopt OncoBrain to deliver consistent, high-quality oncology standardized care pathways across every site, reducing variation while preserving clinician autonomy.',
   },
 
   challenges: {
@@ -81,7 +81,7 @@ export const forHealthSystems = {
       },
       {
         title: 'Explainable, Governance-Aligned AI',
-        description: 'Full traceability and transparency—no black boxes. Every recommendation cites its source.',
+        description: 'Full traceability and transparency. No black boxes. Every recommendation cites its source.',
         metric: '100%',
       },
       {
@@ -126,7 +126,7 @@ export const forHealthSystems = {
 
   surveillance: {
     headline: 'Clinical Surveillance That Builds Trust',
-    description: 'OncoBrain includes a clinical surveillance layer designed to protect clinicians, patients, and health systems—not monitor or judge them.',
+    description: 'OncoBrain includes a clinical surveillance layer designed to protect clinicians, patients, and health systems, not monitor or judge them.',
     whatItDoes: [
       'Continuously monitors guideline changes, evidence updates, and pathway shifts',
       'Flags material changes that could impact treatment decisions',
@@ -190,7 +190,7 @@ export const clinicalValidation = {
   hero: {
     badge: 'How It Works',
     headline: 'Think Like an Oncologist',
-    subheadline: 'OncoBrain is the world\'s first oncology-specific clinical reasoning engine—built to mirror expert clinical reasoning, not keyword search.',
+    subheadline: 'OncoBrain is the world\'s first oncology-specific clinical reasoning engine, built to mirror expert clinical reasoning, not keyword search.',
   },
 
   methodology: {
@@ -248,7 +248,7 @@ export const whyOncoBrain = {
 
   dataAdvantage: {
     headline: 'Proprietary Clinical Moat',
-    description: 'This foundation enables precise, patient-specific treatment reasoning—not generic recommendations.',
+    description: 'This foundation enables precise, patient-specific treatment reasoning, not generic recommendations.',
     items: [
       { label: 'mCAP dataset of more than 1 million patients' },
       { label: '2,400+ data points per case' },
@@ -293,7 +293,7 @@ export const about = {
 
   mission: {
     headline: 'Mission',
-    text: 'Help clinicians make every cancer treatment decision optimal, guideline-concordant, patient-specific, and timely—powered by intelligent technology.',
+    text: 'Help clinicians make every cancer treatment decision optimal, guideline-concordant, patient-specific, and timely. Powered by intelligent technology.',
   },
 
   goal: {
@@ -363,7 +363,7 @@ export const about = {
 export const contact = {
   hero: {
     headline: 'Contact Us',
-    subheadline: 'Interested in learning more about OncoBrain, participating in a pilot, or exploring partnership opportunities?',
+    subheadline: 'Interested in learning more about OncoBrain, scheduling a demo, or exploring partnership opportunities?',
   },
 
   options: [

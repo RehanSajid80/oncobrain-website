@@ -7,7 +7,7 @@ export const homepage = {
     headline: 'Think Like an Oncologist',
     subheadline: 'Turning intelligence into expertise at the speed of care',
     description: 'Medical knowledge now doubles every 73 days. Oncology guidelines update 241+ times per year. OncoBrain helps clinicians keep pace with rapidly evolving cancer evidence, without sacrificing safety, trust, or clinical judgment.',
-    ctaText: 'Request a Pilot Conversation',
+    ctaText: 'Schedule a Conversation',
     ctaSecondaryText: 'See How It Works',
   },
 
@@ -17,7 +17,7 @@ export const homepage = {
     description: 'The pace and complexity of oncology has outgrown traditional decision-making models:',
     stats: [
       'Medical knowledge doubles every 73 days',
-      '30–50% of global cancer care remains non–guideline-concordant',
+      '30-50% of global cancer care remains non-guideline-concordant',
       '80% of cancer patients are treated outside academic medical centers',
       '32 million Americans live in counties without access to an oncologist',
     ],
@@ -35,7 +35,7 @@ export const homepage = {
     items: [
       {
         problem: 'General AI tools',
-        issue: 'Deliver fast answers, but carry 40–50% hallucination rates',
+        issue: 'Deliver fast answers, but carry 40-50% hallucination rates',
       },
       {
         problem: 'Expert consult models',
@@ -46,7 +46,7 @@ export const homepage = {
         issue: 'Are comprehensive, but too complex to synthesize in real time',
       },
     ],
-    positioning: 'OncoBrain delivers safe, scalable, specialist-level expertise at the speed of AI—without replacing clinician judgment.',
+    positioning: 'OncoBrain delivers safe, scalable, specialist-level expertise at the speed of AI, without replacing clinician judgment.',
   },
 
   // Statistics Section
@@ -54,7 +54,7 @@ export const homepage = {
     {
       value: '5.0/5.0',
       label: 'Efficiency',
-      description: 'Physician-rated in pilot evaluations',
+      description: 'Physician-rated in clinical evaluations',
     },
     {
       value: '4.6/5.0',
@@ -89,7 +89,7 @@ export const homepage = {
   howItWorks: {
     headline: 'How OncoBrain Works',
     subheadline: 'Consumes. Interprets. Advises. Anticipates.',
-    description: 'OncoBrain is built to mirror expert clinical reasoning—not keyword search.',
+    description: 'OncoBrain is built to mirror expert clinical reasoning, not keyword search.',
     steps: [
       {
         number: '01',
@@ -136,7 +136,7 @@ export const homepage = {
       },
       {
         title: '<1% Hallucination Rate',
-        description: 'Compared to 40-50% with general LLMs—a critical safety difference.',
+        description: 'Compared to 40-50% with general LLMs. A critical safety difference.',
         icon: 'target',
       },
       {
@@ -173,7 +173,7 @@ export const homepage = {
   // Early Validation Section
   validation: {
     headline: 'Designed for trust. Validated by clinicians.',
-    description: 'In early pilot evaluations, clinicians rated OncoBrain highly across the dimensions that matter most.',
+    description: 'In clinical evaluations, clinicians rated OncoBrain highly across the dimensions that matter most.',
     ctaText: 'See How It Works',
   },
 
@@ -206,9 +206,9 @@ export const homepage = {
   cta: {
     headline: 'Ready to Transform Your Practice?',
     description: 'Join leading oncologists using evidence-based AI to deliver guideline-concordant care at the speed your patients deserve.',
-    ctaText: 'Request a Pilot Conversation',
+    ctaText: 'Schedule a Conversation',
     features: [
-      'Pilot program available',
+      'Early access available',
       'Dedicated clinical onboarding',
       'Enterprise-grade security',
     ],

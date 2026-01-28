@@ -3,7 +3,7 @@
 export const contactPage = {
   hero: {
     headline: 'Get in Touch',
-    subheadline: 'Interested in learning more about OncoBrain, participating in a pilot, or exploring partnership opportunities?',
+    subheadline: 'Interested in learning more about OncoBrain, scheduling a demo, or exploring partnership opportunities?',
   },
 
   form: {
@@ -11,7 +11,7 @@ export const contactPage = {
     description: 'Fill out the form below and our team will get back to you within 24 hours.',
     // Dropdown options for inquiry type
     inquiryTypes: [
-      { value: 'pilot', label: 'Pilot Program Interest' },
+      { value: 'early-access', label: 'Early Access Interest' },
       { value: 'demo', label: 'Request a Demo' },
       { value: 'community-oncologist', label: 'Community Oncologist' },
       { value: 'health-system', label: 'Health System' },

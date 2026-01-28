@@ -72,7 +72,7 @@ export function ProblemSection({ headline, description, stats, whyItMatters, quo
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg text-text-secondary mb-12 max-w-3xl mx-auto"
           >
-            The challenge is no longer access to information—it's translating that information into confident decisions at the point of care.
+            The challenge is no longer access to information. It's translating that information into confident decisions at the point of care.
           </motion.p>
 
           {quote && (
@@ -85,7 +85,7 @@ export function ProblemSection({ headline, description, stats, whyItMatters, quo
                   "{quote.text}"
                 </p>
                 <footer className="text-text-secondary">
-                  — {quote.author}
+                  - {quote.author}
                 </footer>
               </blockquote>
             </div>

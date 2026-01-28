@@ -147,18 +147,18 @@ export default function ForHealthSystemsPage() {
               <p className="text-lg text-gray-300 mb-8">
                 {forHealthSystems.cta.description}
               </p>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-3">
-                  <Check className="w-5 h-5 text-teal-400" />
-                  <span>HIPAA compliant, SOC 2 Type II certified</span>
+              <ul className="space-y-4">
+                <li className="flex items-center gap-4">
+                  <Check className="w-6 h-6 text-teal-400 flex-shrink-0" />
+                  <span className="text-lg font-semibold">HIPAA compliant, SOC 2 Type II certified</span>
                 </li>
-                <li className="flex items-center gap-3">
-                  <Check className="w-5 h-5 text-teal-400" />
-                  <span>Dedicated implementation & training support</span>
+                <li className="flex items-center gap-4">
+                  <Check className="w-6 h-6 text-teal-400 flex-shrink-0" />
+                  <span className="text-lg font-semibold">Dedicated implementation & training support</span>
                 </li>
-                <li className="flex items-center gap-3">
-                  <Check className="w-5 h-5 text-teal-400" />
-                  <span>Private cloud deployment available</span>
+                <li className="flex items-center gap-4">
+                  <Check className="w-6 h-6 text-teal-400 flex-shrink-0" />
+                  <span className="text-lg font-semibold">Private cloud deployment available</span>
                 </li>
               </ul>
             </div>
