@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import { Plug, Shield, BarChart3, Headset, ArrowRight, Check } from 'lucide-react'
 import { Button, Badge, Card } from '@/components/ui'
 import { forHealthSystems } from '@/content/pages'
@@ -169,13 +170,13 @@ export default function ForHealthSystemsPage() {
               <p className="text-text-secondary mb-6">
                 Tell us about your health system and we'll prepare a customized proposal.
               </p>
-              <a
+              <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 w-full py-4 px-6 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold rounded-xl transition-all duration-200"
               >
                 Contact Us
                 <ArrowRight className="w-5 h-5" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
