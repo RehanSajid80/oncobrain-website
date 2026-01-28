@@ -40,11 +40,11 @@ export const contactPage = {
       },
       {
         label: 'Partnerships & Business Development',
-        email: 'partnerships@oncobrain.ai',
+        email: 'info@oncobrain.ai',
       },
       {
         label: 'Press & Media',
-        email: 'press@oncobrain.ai',
+        email: 'info@oncobrain.ai',
       },
     ],
   },

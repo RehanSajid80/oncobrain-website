@@ -42,7 +42,7 @@ export const siteConfig = {
 
   // Contact Info
   contact: {
-    email: 'hello@oncobrain.ai',
+    email: 'info@oncobrain.ai',
     address: 'Tampa, Florida',
   },
 }

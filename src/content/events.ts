@@ -148,6 +148,6 @@ export const ahaRuralConference2026 = {
   cta: {
     headline: 'Questions?',
     description: 'Stop by our booth or reach out directly.',
-    email: 'hello@oncobrain.ai',
+    email: 'info@oncobrain.ai',
   },
 }
