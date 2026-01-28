@@ -16,7 +16,7 @@ export const homepage = {
     headline: 'Cancer care is evolving faster than humans can track',
     description: 'The pace and complexity of oncology has outgrown traditional decision-making models:',
     stats: [
-      'Medical knowledge doubles every 73 days',
+      'Over 1.9 million new cancer cases diagnosed annually in the US',
       '30-50% of global cancer care remains non-guideline-concordant',
       '80% of cancer patients are treated outside academic medical centers',
       '32 million Americans live in counties without access to an oncologist',
