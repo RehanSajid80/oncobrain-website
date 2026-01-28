@@ -37,9 +37,10 @@ export function HowItWorksSection({ headline, subheadline, steps }: HowItWorksSe
           )}
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl mx-auto">
           {steps.map((step, index) => {
             const Icon = icons[step.icon] || CheckCircle
+            const isLeftColumn = index % 2 === 0
             return (
               <motion.div
                 key={index}
@@ -49,8 +50,8 @@ export function HowItWorksSection({ headline, subheadline, steps }: HowItWorksSe
                 transition={{ duration: 0.5, delay: index * 0.15 }}
                 className="relative"
               >
-                {/* Connector Line */}
-                {index < steps.length - 1 && (
+                {/* Horizontal Connector Line (right side of left column items) */}
+                {isLeftColumn && (
                   <div className="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-gradient-to-r from-teal-200 to-teal-100" />
                 )}
 

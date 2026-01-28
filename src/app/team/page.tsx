@@ -41,7 +41,7 @@ function TeamMemberCard({
           <span className="text-white text-3xl font-bold">{initials}</span>
           {/* Uncomment when images are added:
           <img
-            src={`/oncobrain-website${member.image}`}
+            src={member.image}
             alt={member.name}
             className="w-full h-full object-cover"
           />
@@ -92,7 +92,7 @@ function AffiliationLogo({
     >
       {logo.logo ? (
         <img
-          src={`/oncobrain-website${logo.logo}`}
+          src={logo.logo}
           alt={logo.name}
           className="max-h-14 max-w-full object-contain"
         />

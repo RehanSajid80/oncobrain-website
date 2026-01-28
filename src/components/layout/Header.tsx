@@ -18,7 +18,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img
-              src="/oncobrain-website/logos/oncobrain-logo.png"
+              src="/logos/oncobrain-logo.png"
               alt="OncoBrain"
               width={180}
               height={40}
