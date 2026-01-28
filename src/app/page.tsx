@@ -6,7 +6,6 @@ import {
   FeaturesSection,
   TestimonialsSection,
   CTASection,
-  TrustBadges,
   WhatItDoesSection,
   ValidationSection,
 } from '@/components/sections'
@@ -24,9 +23,6 @@ export default function HomePage() {
         ctaText={homepage.hero.ctaText}
         ctaSecondaryText={homepage.hero.ctaSecondaryText}
       />
-
-      {/* Trust Badges */}
-      <TrustBadges />
 
       {/* Problem Statement */}
       <ProblemSection
