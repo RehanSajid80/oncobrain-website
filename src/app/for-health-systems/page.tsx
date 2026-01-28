@@ -1,10 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Plug, Shield, BarChart3, Headset, ArrowRight } from 'lucide-react'
+import { Plug, Shield, BarChart3, Headset, ArrowRight, Check } from 'lucide-react'
 import { Button, Badge, Card } from '@/components/ui'
-import { HubSpotEmbed } from '@/components/forms/HubSpotEmbed'
-import { hubspotForms } from '@/content/hubspot'
 import { forHealthSystems } from '@/content/pages'
 
 const icons = {
@@ -148,32 +146,36 @@ export default function ForHealthSystemsPage() {
               <p className="text-lg text-gray-300 mb-8">
                 {forHealthSystems.cta.description}
               </p>
-              <div className="space-y-4">
-                <div className="flex items-center gap-4 bg-white/10 rounded-xl p-4">
-                  <Shield className="w-8 h-8 text-teal-400" />
-                  <div>
-                    <div className="font-semibold">HIPAA Compliant</div>
-                    <div className="text-sm text-gray-400">SOC 2 Type II certified</div>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4 bg-white/10 rounded-xl p-4">
-                  <Headset className="w-8 h-8 text-teal-400" />
-                  <div>
-                    <div className="font-semibold">Dedicated Support</div>
-                    <div className="text-sm text-gray-400">Implementation & training included</div>
-                  </div>
-                </div>
-              </div>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-3">
+                  <Check className="w-5 h-5 text-teal-400" />
+                  <span>HIPAA compliant, SOC 2 Type II certified</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Check className="w-5 h-5 text-teal-400" />
+                  <span>Dedicated implementation & training support</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Check className="w-5 h-5 text-teal-400" />
+                  <span>Private cloud deployment available</span>
+                </li>
+              </ul>
             </div>
 
-            <div className="bg-white rounded-2xl p-8">
+            <div className="bg-white rounded-2xl p-8 text-center">
               <h3 className="text-xl font-semibold text-navy-800 mb-2">
                 Contact Our Sales Team
               </h3>
               <p className="text-text-secondary mb-6">
                 Tell us about your health system and we'll prepare a customized proposal.
               </p>
-              <HubSpotEmbed {...hubspotForms.contactSales} />
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 w-full py-4 px-6 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold rounded-xl transition-all duration-200"
+              >
+                Contact Us
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>
