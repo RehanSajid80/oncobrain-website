@@ -41,7 +41,7 @@ export const hubspotForms = {
   // Newsletter Signup (Footer)
   newsletter: {
     portalId: hubspotConfig.portalId,
-    formId: 'YOUR_NEWSLETTER_FORM_ID',
+    formId: 'e4b51557-a958-4a15-abfa-38b357e999fe',
     region: hubspotConfig.region,
   },
 }
