@@ -15,7 +15,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="inline-flex items-center">
               <img
-                src="/logos/oncobrain-logo.png"
+                src="/oncobrain-website/logos/oncobrain-logo.png"
                 alt="OncoBrain"
                 width={160}
                 height={36}

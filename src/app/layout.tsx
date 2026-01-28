@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: '/logos/oncobrain-logo.png',
+        url: '/oncobrain-website/logos/oncobrain-logo.png',
         width: 1200,
         height: 630,
         alt: 'OncoBrain - Clinical Intelligence for Oncology',
@@ -83,17 +83,17 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `${siteConfig.name} - ${siteConfig.tagline}`,
     description: siteConfig.description,
-    images: ['/logos/oncobrain-logo.png'],
+    images: ['/oncobrain-website/logos/oncobrain-logo.png'],
     creator: '@oncobrain',
   },
 
   // Icons & Favicon
   icons: {
     icon: [
-      { url: '/icons/oncobrain-icon.svg', type: 'image/svg+xml' },
+      { url: '/oncobrain-website/icons/oncobrain-icon.svg', type: 'image/svg+xml' },
     ],
     apple: [
-      { url: '/logos/oncobrain-logo.png', sizes: '180x180', type: 'image/png' },
+      { url: '/oncobrain-website/logos/oncobrain-logo.png', sizes: '180x180', type: 'image/png' },
     ],
   },
 

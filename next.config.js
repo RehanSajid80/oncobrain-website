@@ -4,10 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // basePath and assetPrefix removed for Azure deployment
-  // For GitHub Pages, uncomment these lines:
-  // basePath: '/oncobrain-website',
-  // assetPrefix: '/oncobrain-website/',
+  basePath: '/oncobrain-website',
+  assetPrefix: '/oncobrain-website/',
 }
 
 module.exports = nextConfig
