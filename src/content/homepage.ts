@@ -3,10 +3,10 @@
 export const homepage = {
   // Hero Section
   hero: {
-    badge: 'By Clinicians, For Clinicians',
-    headline: 'Think Like an Oncologist',
-    subheadline: 'Turning intelligence into expertise at the speed of care',
-    description: 'Medical knowledge now doubles every 73 days. Oncology guidelines update 241+ times per year. OncoBrain helps clinicians keep pace with rapidly evolving cancer evidence, without sacrificing safety, trust, or clinical judgment.',
+    badge: 'For Clinicians. By Clinicians.',
+    headline: 'The Only Oncology Clinical Reasoning Engine.',
+    subheadline: 'Turning intelligence into expertise at the speed of care.',
+    description: '',
     ctaText: 'Schedule a Conversation',
     ctaSecondaryText: 'See How It Works',
   },
