@@ -35,15 +35,7 @@ export const contactPage = {
     email: 'info@oncobrain.ai',
     items: [
       {
-        label: 'General Inquiries',
-        email: 'info@oncobrain.ai',
-      },
-      {
-        label: 'Partnerships & Business Development',
-        email: 'info@oncobrain.ai',
-      },
-      {
-        label: 'Press & Media',
+        label: 'All Enquiries',
         email: 'info@oncobrain.ai',
       },
     ],
