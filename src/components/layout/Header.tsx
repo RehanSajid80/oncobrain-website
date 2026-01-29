@@ -99,7 +99,7 @@ export function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="primary" size="sm" href="/contact">
+            <Button variant="primary" size="sm" href="/contact-us">
               Request Access
             </Button>
           </div>
@@ -166,7 +166,7 @@ export function Header() {
                 )
               })}
               <div className="pt-4 border-t border-white/10">
-                <Button variant="primary" className="w-full" href="/contact">
+                <Button variant="primary" className="w-full" href="/contact-us">
                   Request Access
                 </Button>
               </div>

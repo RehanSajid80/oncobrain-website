@@ -25,9 +25,8 @@ export const contactPage = {
     headline: 'Schedule a Meeting',
     description: 'Prefer to talk directly? Book a time with our team to discuss how OncoBrain can support your practice or organization.',
     ctaText: 'Schedule a Call',
-    // This will route through HubSpot for prospect tracking
-    // The meeting link should be set up in HubSpot Meetings
-    meetingLink: 'https://meetings.hubspot.com/oncobrain/general-bd',
+    // Opens in a new tab to HubSpot meeting scheduler
+    meetingLink: 'https://244017401.hubspotpreview-na2.com/_hcms/preview/preview-interactive?previewInteractiveId=306091202242&_preview=true&portalId=244017401',
   },
 
   info: {

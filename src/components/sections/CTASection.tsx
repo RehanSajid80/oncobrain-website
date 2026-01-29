@@ -49,7 +49,7 @@ export function CTASection({ headline, description, ctaText, features }: CTASect
 
             {/* CTA Button */}
             <Link
-              href="/contact"
+              href="/contact-us"
               className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-400 hover:to-teal-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-teal-500/25 hover:shadow-teal-500/40 text-lg"
             >
               {ctaText}

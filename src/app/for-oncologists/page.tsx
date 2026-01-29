@@ -63,7 +63,7 @@ export default function ForOncologistsPage() {
               <p className="text-lg text-text-secondary mb-8">
                 {forOncologists.hero.subheadline}
               </p>
-              <Button variant="primary" size="lg" href="/contact">
+              <Button variant="primary" size="lg" href="/contact-us">
                 Request Early Access
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -205,7 +205,7 @@ export default function ForOncologistsPage() {
                 Ready to see how OncoBrain can support your practice?
               </p>
               <Link
-                href="/contact"
+                href="/contact-us"
                 className="inline-flex items-center justify-center gap-2 w-full py-4 px-6 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold rounded-xl transition-all duration-200"
               >
                 Contact Us
