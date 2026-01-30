@@ -164,44 +164,6 @@ export default function ClinicalValidationPage() {
         </div>
       </section>
 
-      {/* Guidelines Section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container-wide">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-4">
-              Guideline Sources
-            </h2>
-            <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-              OncoBrain integrates the latest updates from leading oncology guidelines.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { name: 'NCCN', description: 'National Comprehensive Cancer Network' },
-              { name: 'ASCO', description: 'American Society of Clinical Oncology' },
-              { name: 'ESMO', description: 'European Society for Medical Oncology' },
-            ].map((guideline, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <Card hover className="h-full text-center">
-                  <div className="text-3xl font-bold text-gradient-teal mb-2">
-                    {guideline.name}
-                  </div>
-                  <p className="text-text-secondary">
-                    {guideline.description}
-                  </p>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   )
 }
