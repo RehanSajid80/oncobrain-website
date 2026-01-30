@@ -1,10 +1,13 @@
 'use client'
 
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { Clock, BookOpen, Users, AlertTriangle, Check, ArrowRight } from 'lucide-react'
-import { Button, Badge } from '@/components/ui'
+import { Clock, BookOpen, Users, AlertTriangle, Check, ArrowRight, Play } from 'lucide-react'
+import { Button, Badge, VideoModal } from '@/components/ui'
 import { forOncologists } from '@/content/pages'
+
+const DEMO_VIDEO_URL = 'https://244017401.fs1.hubspotusercontent-na2.net/hubfs/244017401/Videos/OncoBrain%20-%2060%20Sec%20Demo.mp4'
 
 // Challenge-Solution pairs
 const challengeSolutions = [
@@ -43,8 +46,17 @@ const challengeSolutions = [
 ]
 
 export default function ForOncologistsPage() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false)
+
   return (
     <>
+      {/* Video Modal */}
+      <VideoModal
+        videoUrl={DEMO_VIDEO_URL}
+        isOpen={isVideoOpen}
+        onClose={() => setIsVideoOpen(false)}
+      />
+
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-gradient-hero">
         <div className="container-wide">
@@ -76,11 +88,18 @@ export default function ForOncologistsPage() {
               className="relative"
             >
               <div className="bg-white rounded-2xl shadow-soft p-8 border border-gray-100">
-                <div className="aspect-video bg-navy-800 rounded-xl flex items-center justify-center mb-4">
-                  <div className="text-white text-center">
-                    <p className="text-sm opacity-80">Product Demo</p>
+                <button
+                  onClick={() => setIsVideoOpen(true)}
+                  className="w-full aspect-video bg-navy-800 rounded-xl flex items-center justify-center mb-4 group cursor-pointer hover:bg-navy-700 transition-colors relative overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  <div className="relative z-10 flex flex-col items-center gap-3">
+                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors">
+                      <Play className="w-8 h-8 text-white ml-1" />
+                    </div>
+                    <p className="text-white font-medium">Watch Demo</p>
                   </div>
-                </div>
+                </button>
                 <p className="text-sm text-text-muted text-center">
                   See how OncoBrain works in a real clinical scenario
                 </p>
