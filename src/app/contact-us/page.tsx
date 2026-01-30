@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Calendar, Send, MapPin } from 'lucide-react'
+import { Mail, Calendar, Send } from 'lucide-react'
 import { contactPage } from '@/content/contact'
 import { HubSpotEmbed } from '@/components/forms/HubSpotEmbed'
 import { hubspotForms } from '@/content/hubspot'
@@ -119,27 +119,6 @@ export default function ContactPage() {
                       >
                         {item.email}
                       </a>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Office Location Card */}
-              <div className="bg-white rounded-3xl shadow-lg shadow-gray-200/50 p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-amber-600" />
-                  </div>
-                  <h3 className="text-xl font-bold text-navy-800">
-                    {contactPage.offices.headline}
-                  </h3>
-                </div>
-
-                <div className="space-y-4">
-                  {contactPage.offices.locations.map((location, index) => (
-                    <div key={index}>
-                      <p className="font-semibold text-navy-800">{location.city}</p>
-                      <p className="text-text-secondary text-sm">{location.description}</p>
                     </div>
                   ))}
                 </div>
