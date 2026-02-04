@@ -32,6 +32,9 @@ export const siteConfig = {
       { name: 'Privacy Policy', href: '/privacy' },
       { name: 'Terms of Service', href: '/terms' },
     ],
+    events: [
+      { name: 'AHA Rural 2026', href: '/aha-rural-2026' },
+    ],
   },
 
   // Social Links

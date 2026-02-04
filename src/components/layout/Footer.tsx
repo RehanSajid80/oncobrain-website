@@ -10,7 +10,7 @@ export function Footer() {
   return (
     <footer className="bg-navy-800 text-white">
       <div className="container-wide py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-flex items-center">
@@ -113,6 +113,25 @@ export function Footer() {
             </h3>
             <ul className="space-y-3">
               {siteConfig.footerLinks.legal.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-teal-400 transition-colors text-sm"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Events Links */}
+          <div>
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
+              Events
+            </h3>
+            <ul className="space-y-3">
+              {siteConfig.footerLinks.events.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
