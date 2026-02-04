@@ -17,6 +17,9 @@ import {
 import { ahaRuralConference2026 } from '@/content/events'
 import { HubSpotEmbed } from '@/components/forms'
 import { hubspotForms } from '@/content/hubspot'
+import { VideoTrigger } from '@/components/ui'
+
+const DEMO_VIDEO_URL = 'https://244017401.fs1.hubspotusercontent-na2.net/hubfs/244017401/Videos/OncoBrain%20-%2060%20Sec%20Demo.mp4'
 
 const iconMap: Record<string, React.ElementType> = {
   unlock: Unlock,
@@ -127,9 +130,18 @@ export default function AHARuralConferencePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#081923] mb-4">
               {content.offer.headline}
             </h2>
-            <p className="text-xl text-[#0055FF] font-semibold">
+            <p className="text-xl text-[#0055FF] font-semibold mb-8">
               {content.offer.subheadline}
             </p>
+
+            {/* Demo Video */}
+            <VideoTrigger
+              videoUrl={DEMO_VIDEO_URL}
+              className="inline-flex items-center justify-center gap-3 bg-[#0055FF] hover:bg-[#0044CC] text-white px-8 py-4 rounded-xl font-semibold transition-colors shadow-lg hover:shadow-xl"
+            >
+              <Play className="h-6 w-6" />
+              Watch 60-Second Demo
+            </VideoTrigger>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

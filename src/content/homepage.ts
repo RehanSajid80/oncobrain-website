@@ -8,7 +8,7 @@ export const homepage = {
     subheadline: 'Turning intelligence into expertise at the speed of care.',
     description: '',
     ctaText: 'Schedule a Conversation',
-    ctaSecondaryText: 'See OncoBrain in Action',
+    ctaSecondaryText: 'See How It Works',
   },
 
   // Problem Statement Section
