@@ -35,7 +35,7 @@ export const homepage = {
     items: [
       {
         problem: 'General AI tools',
-        issue: 'Deliver fast answers, but carry 40-50% hallucination rates',
+        issue: 'Deliver fast answers, but carry up to 40-50% hallucination rates risk in specific clinical settings.',
       },
       {
         problem: 'Expert consult models',
@@ -78,9 +78,10 @@ export const homepage = {
     headline: 'The world\'s first oncology-specific clinical reasoning engine',
     description: 'OncoBrain reasons through cancer cases the way an expert oncologist would:',
     points: [
-      'Synthesizes guidelines, literature, and patient-specific context',
-      'Delivers guideline-concordant, patient-specific insights in real time',
-      'Acts as a clinical assurance layer, not an autonomous decision-maker',
+      'Synthesizes clinical guidelines, medical literature, precision oncology data, and patient-specific context.',
+      'Helps clinicians navigate complex decisions at the speed of a click — without autonomous decision-making.',
+      'Delivers real-time, guideline-concordant insights while preserving clinician judgment.',
+      'Acts as a clinical assurance layer, not a replacement for expertise.',
     ],
     result: 'The result: clearer decisions, made faster, with confidence.',
   },
