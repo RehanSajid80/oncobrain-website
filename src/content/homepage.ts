@@ -137,7 +137,7 @@ export const homepage = {
       },
       {
         title: '<1% Hallucination Rate',
-        description: 'Compared to 40-50% with general LLMs. A critical safety difference.',
+        description: 'Our patented hallucination detection algorithms reduce hallucinations from 30-40% in specific clinical situations to less than 1%.',
         icon: 'target',
       },
       {
