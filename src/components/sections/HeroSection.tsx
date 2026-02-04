@@ -1,11 +1,10 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight, Play } from 'lucide-react'
-import { Button, Badge, VideoTrigger } from '@/components/ui'
+import { ArrowRight, Calendar } from 'lucide-react'
+import { Button, Badge } from '@/components/ui'
 import { ProductDemo } from './ProductDemo'
-
-const DEMO_VIDEO_URL = 'https://244017401.fs1.hubspotusercontent-na2.net/hubfs/244017401/Videos/OncoBrain%20-%2060%20Sec%20Demo.mp4'
+import Link from 'next/link'
 
 interface HeroSectionProps {
   badge?: string
@@ -74,13 +73,13 @@ export function HeroSection({
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               {ctaSecondaryText && (
-                <VideoTrigger
-                  videoUrl={DEMO_VIDEO_URL}
+                <Link
+                  href="/aha-rural-2026"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold rounded-xl border-2 border-navy-800 text-navy-800 hover:bg-navy-800 hover:text-white transition-all duration-200"
                 >
-                  <Play className="h-5 w-5" />
+                  <Calendar className="h-5 w-5" />
                   {ctaSecondaryText}
-                </VideoTrigger>
+                </Link>
               )}
             </div>
 
