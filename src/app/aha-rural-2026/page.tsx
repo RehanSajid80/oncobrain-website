@@ -9,16 +9,23 @@ import {
   ArrowRight,
   MapPin,
   Calendar,
-  ExternalLink
+  ExternalLink,
+  Play,
+  Users,
+  MessageCircle
 } from 'lucide-react'
 import { ahaRuralConference2026 } from '@/content/events'
 import { HubSpotEmbed } from '@/components/forms'
+import { hubspotForms } from '@/content/hubspot'
 
 const iconMap: Record<string, React.ElementType> = {
   unlock: Unlock,
   infinity: Repeat,
   checkCircle: CheckCircle,
   headset: Headphones,
+  play: Play,
+  users: Users,
+  messageCircle: MessageCircle,
 }
 
 export default function AHARuralConferencePage() {
@@ -261,11 +268,9 @@ export default function AHARuralConferencePage() {
             viewport={{ once: true }}
             className="bg-white border border-gray-200 rounded-2xl p-8 shadow-lg"
           >
-            {/* HubSpot Form Embed - Replace with actual form ID */}
+            {/* HubSpot Form Embed - Using same contact form */}
             <HubSpotEmbed
-              portalId="YOUR_PORTAL_ID"
-              formId="YOUR_AHA_EVENT_FORM_ID"
-              region="na1"
+              {...hubspotForms.contact}
             />
 
             <p className="text-xs text-gray-500 mt-6 text-center">

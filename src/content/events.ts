@@ -14,35 +14,36 @@ export const ahaRuralConference2026 = {
   hero: {
     badge: 'AHA Rural Healthcare Conference 2026',
     headline: 'Experience OncoBrain',
-    subheadline: 'Get 4 weeks of unlimited access to the world\'s first oncology-specific clinical reasoning engine.',
-    description: 'See how OncoBrain helps community and rural oncologists make faster, guideline-concordant treatment decisions, without sacrificing safety or clinical judgment.',
-    ctaText: 'Start Your Free Trial',
+    subheadline: 'See the world\'s first oncology-specific clinical reasoning engine in action.',
+    description: 'Schedule a meeting during the conference or request a personalized demo to see how OncoBrain helps community and rural oncologists make faster, guideline-concordant treatment decisions.',
+    ctaText: 'Schedule a Meeting',
+    ctaSecondaryText: 'See the Platform',
   },
 
   // What You Get Section
   offer: {
-    headline: 'Your Exclusive Conference Offer',
-    subheadline: '4 Weeks of Unlimited OncoBrain Access',
+    headline: 'See OncoBrain in Action',
+    subheadline: 'Schedule a Demo or Meet Us at the Conference',
     items: [
       {
-        title: 'Full Platform Access',
-        description: 'Experience every feature of OncoBrain with no restrictions during your trial period.',
-        icon: 'unlock',
+        title: 'Live Platform Demo',
+        description: 'See OncoBrain reason through real clinical scenarios with full transparency.',
+        icon: 'play',
       },
       {
-        title: 'Unlimited Case Consultations',
-        description: 'Run as many patient cases as you need through our clinical reasoning engine.',
-        icon: 'infinity',
+        title: 'Meet Our Clinical Team',
+        description: 'Connect with our oncology experts to discuss your practice needs.',
+        icon: 'users',
       },
       {
         title: 'Guideline-Concordant Insights',
-        description: 'Get real-time recommendations aligned with NCCN, ASCO, and peer-reviewed evidence.',
+        description: 'Experience real-time recommendations aligned with NCCN, ASCO, and peer-reviewed evidence.',
         icon: 'checkCircle',
       },
       {
-        title: 'Dedicated Support',
-        description: 'Access to our clinical support team to help you get the most from your trial.',
-        icon: 'headset',
+        title: 'Q&A Session',
+        description: 'Get answers to your questions about implementation and integration.',
+        icon: 'messageCircle',
       },
     ],
   },
@@ -113,35 +114,18 @@ export const ahaRuralConference2026 = {
 
   // Registration Form Section
   form: {
-    headline: 'Start Your Free Trial',
-    subheadline: 'Register now for 4 weeks of unlimited access',
+    headline: 'Send Us a Message',
+    subheadline: 'Fill out the form below and our team will get back to you within 24 hours',
     fields: [
       { name: 'firstName', label: 'First Name', type: 'text', required: true },
       { name: 'lastName', label: 'Last Name', type: 'text', required: true },
-      { name: 'email', label: 'Email Address', type: 'email', required: true },
-      { name: 'phone', label: 'Phone Number', type: 'tel', required: false },
-      { name: 'organization', label: 'Practice/Organization', type: 'text', required: true },
-      { name: 'role', label: 'Role', type: 'select', required: true, options: [
-        'Medical Oncologist',
-        'Hematologist-Oncologist',
-        'Surgical Oncologist',
-        'Radiation Oncologist',
-        'Advanced Practice Provider',
-        'Other',
-      ]},
-      { name: 'specialty', label: 'Primary Tumor Type Focus', type: 'select', required: false, options: [
-        'General Oncology / Multiple',
-        'Breast',
-        'Lung',
-        'GI / Colorectal',
-        'GU / Prostate',
-        'Hematologic Malignancies',
-        'Gynecologic',
-        'Other',
-      ]},
+      { name: 'title', label: 'Title', type: 'text', required: false },
+      { name: 'company', label: 'Company', type: 'text', required: true },
+      { name: 'email', label: 'Email', type: 'email', required: true },
+      { name: 'comments', label: 'Comments', type: 'textarea', required: false },
     ],
-    submitText: 'Get My Free Trial',
-    disclaimer: 'By registering, you agree to receive communications from OncoBrain about your trial and related product updates. You can unsubscribe at any time.',
+    submitText: 'Submit',
+    disclaimer: 'OncoBrain uses the information you provide to respond to your inquiry and share relevant updates about our products and services. You can opt out of communications at any time. To learn more about how we protect and use your data, please review our Privacy Policy.',
   },
 
   // Footer CTA
