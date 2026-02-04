@@ -122,7 +122,7 @@ export const homepage = {
   // Features Section
   features: {
     headline: 'Built for Safety You Can See',
-    subheadline: 'Explainability is the feature',
+    subheadline: 'Explainability and Traceability are the feature',
     description: 'Trust in clinical AI depends on transparency. OncoBrain is designed with safety and explainability at its core.',
     items: [
       {
