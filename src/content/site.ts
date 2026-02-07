@@ -24,7 +24,6 @@ export const siteConfig = {
     ],
     company: [
       { name: 'About Us', href: '/about' },
-      { name: 'Team', href: '/team' },
       { name: 'Contact', href: '/contact-us' },
       { name: 'Careers', href: '/careers' },
     ],
