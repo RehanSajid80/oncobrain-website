@@ -12,7 +12,6 @@ import { cn } from '@/lib/utils'
 const dropdownItems: Record<string, { name: string; href: string }[]> = {
   'About': [
     { name: 'About Us', href: '/about' },
-    { name: 'Team', href: '/team' },
   ],
 }
 
